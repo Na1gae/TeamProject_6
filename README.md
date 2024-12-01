@@ -1,6 +1,6 @@
 # 팀프로젝트 Ver 1
 
-![스크린샷 2024-12-01 192957](https://github.com/user-attachments/assets/a2a7adef-f94d-45f6-b737-a1284aa0b772)
+![스크린샷 2024-12-01 203126](https://github.com/user-attachments/assets/1ee8a191-74f5-4e1a-8727-2d23ab1f4e9e)
 
 ## moduleA
 전체 과목의 분포 데이터를 가진 상위 클래스를 만들고 한 과목의 분포 데이터를 가진 하위 클래스를 만듦.  
