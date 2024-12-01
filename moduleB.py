@@ -5,7 +5,7 @@ class graph:
     def __init__(self, distribution_instance):
         self.distribution = distribution_instance
 
-    def bar_chart(self, stacked=False):
+    def bar_chart(self, stacked=True):
         """
         표준점수별 막대 그래프를 생성합니다.
         :param stacked: True이면 하나로 합쳐진 막대 그래프를 생성합니다. False이면 두개가 분리됩니다.
