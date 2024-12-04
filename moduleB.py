@@ -10,6 +10,7 @@ class Graph:
         men = self.distribution.man
         women = self.distribution.woman
         subject = self.distribution.subject
+        year = self.distribution.year
 
         x = np.arange(len(scores))
 
@@ -22,7 +23,7 @@ class Graph:
 
         ax.set_xlabel('표준 점수', fontsize=12)
         ax.set_ylabel('학생 수', fontsize=12)
-        ax.set_title(f'2024학년도 수능 {subject} 표준점수 분포', fontsize=14)
+        ax.set_title(f'{year}학년도 수능 {subject} 표준점수 분포', fontsize=14)
         ax.set_xticks(x)
         ax.set_xticklabels(scores, rotation=90)
         ax.legend()
