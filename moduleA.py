@@ -19,9 +19,9 @@ class distributions:
 class distribution(distributions):
     def __init__(self,*a):
         super().__init__(*a)
-        self.year=input(f'다음 중 연도를 선택해주세요\n{set(self.df['연도'])}')
-        self.domain=input(f'다음 중 영역을 선택해주세요\n{set(self.df[self.df['연도']==self.year]['영역'])}')
-        self.subject=input(f'다음 중 유형을 선택해주세요\n{set(self.df[self.df['영역']==self.domain]['유형'])}')
-        self.score=list(self.df[self.df['유형']==self.subject]['표준점수'])
-        self.man=list(self.df[self.df['유형']==self.subject]['남자'])
-        self.woman=list(self.df[self.df['유형']==self.subject]['여자'])
+        self.year = input(f"다음 중 연도를 선택해주세요\n{set(self.df['연도'])}")
+        self.domain = input(f"다음 중 영역을 선택해주세요\n{set(self.df[self.df['연도'] == self.year]['영역'])}")
+        self.subject = input(f"다음 중 유형을 선택해주세요\n{set(self.df[self.df['영역'] == self.domain]['유형'])}")
+        self.score = list(self.df[self.df['유형'] == self.subject]['표준점수'])
+        self.man = list(self.df[self.df['유형'] == self.subject]['남자'])
+        self.woman = list(self.df[self.df['유형'] == self.subject]['여자'])
