@@ -1,8 +1,7 @@
 from moduleA import distribution
-from moduleB import graph
+import moduleB
 
-d=distribution('20231231.csv')
+d=distribution('20201231.csv','20211231.csv', '20221231.csv', '20231231.csv')
 
-g=graph(d)
-
-g.bar_chart(True)
+g= moduleB.Graph(d)
+g.line_chart()
